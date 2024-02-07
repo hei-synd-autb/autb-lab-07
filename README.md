@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 align="left">
   <br>
   <img src="./img/hei-en.png" alt="HEI-Vs Logo" width="350">
   <br>
@@ -8,9 +8,9 @@
 
 Cours AutB
 
-# AutB-PracticalWork-CyclicSetPoint
-
 Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
+
+# LAB 07 Gestion d'un mouvement basé sur un polynôme d'ordre 5
 
 *Keywords:* **Polynomial Cyclic Set Point**
 
