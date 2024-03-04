@@ -10,7 +10,7 @@
          <securityPolicy>Basic256Sha256</securityPolicy>
          <userAuthentication>UsernameAndPassword</userAuthentication>
          <username>boschrexroth</username>
-         <password>GYVDRWx6miuSZUFt2grDjdadfdwmVbtw</password>
+         <password>43lbZRa9LP68SsRUOszVZ6Jg0izADHI3</password>
       </connection>
    </connections>
    <groups>
@@ -25,24 +25,6 @@
                <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/stSetDynamicParams/rAcceleration_mm_s2</nodeIdValue>
                <dataType>Double</dataType>
                <signalName>rAcceleration_mm_s2</signalName>
-               <currentWrite>true</currentWrite>
-               <loggingEnabled>false</loggingEnabled>
-            </item>
-            <item>
-               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/stSetDynamicParams/rDeceleration_m_s2</nodeIdValue>
-               <dataType>Double</dataType>
-               <signalName>rDeceleration_m_s2</signalName>
-               <currentWrite>true</currentWrite>
-               <loggingEnabled>false</loggingEnabled>
-            </item>
-            <item>
-               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/stSetDynamicParams/rJerk_m_s3</nodeIdValue>
-               <dataType>Double</dataType>
-               <signalName>rJerk_m_s3</signalName>
                <currentWrite>true</currentWrite>
                <loggingEnabled>false</loggingEnabled>
             </item>
@@ -70,6 +52,24 @@
                <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/mcStop/Deceleration</nodeIdValue>
                <dataType>Double</dataType>
                <signalName>Deceleration</signalName>
+               <currentWrite>true</currentWrite>
+               <loggingEnabled>false</loggingEnabled>
+            </item>
+            <item>
+               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/stSetMotionParam/rDeceleration_mm_s2</nodeIdValue>
+               <dataType>Double</dataType>
+               <signalName>rDeceleration_mm_s2</signalName>
+               <currentWrite>true</currentWrite>
+               <loggingEnabled>false</loggingEnabled>
+            </item>
+            <item>
+               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/stSetMotionParam/rJerk_mm_s3</nodeIdValue>
+               <dataType>Double</dataType>
+               <signalName>rJerk_mm_s3</signalName>
                <currentWrite>true</currentWrite>
                <loggingEnabled>false</loggingEnabled>
             </item>
@@ -560,108 +560,6 @@
                      <enableWriteMode>true</enableWriteMode>
                      <fontSize>30</fontSize>
                      <gaugeColor>RED</gaugeColor>
-                  </parameters>
-               </gauge>
-               <gauge>
-                  <type>NUMERIC</type>
-                  <rowIndex>1</rowIndex>
-                  <colIndex>3</colIndex>
-                  <rowSpan>1</rowSpan>
-                  <colSpan>1</colSpan>
-                  <items>
-                     <item>
-                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/stSetDynamicParams/rDeceleration_m_s2</nodeIdValue>
-                        <dataType>Double</dataType>
-                        <signalName>rDeceleration_m_s2</signalName>
-                        <currentWrite>true</currentWrite>
-                        <loggingEnabled>false</loggingEnabled>
-                     </item>
-                  </items>
-                  <parameters>
-                     <title>Deceleration</title>
-                     <unit>m/s^2</unit>
-                     <scaling>1.0</scaling>
-                     <offset>0.0</offset>
-                     <decimalPlaces>2</decimalPlaces>
-                     <alarmLimits>
-                        <lowLowLimit>0.0</lowLowLimit>
-                        <lowLimit>0.0</lowLimit>
-                        <highLimit>0.0</highLimit>
-                        <highHighLimit>0.0</highHighLimit>
-                        <lowLowIsEnabled>false</lowLowIsEnabled>
-                        <lowIsEnabled>false</lowIsEnabled>
-                        <highIsEnabled>false</highIsEnabled>
-                        <highHighIsEnabled>false</highHighIsEnabled>
-                        <showNotifications>false</showNotifications>
-                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
-                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
-                        <showDialogsMode>MANUAL</showDialogsMode>
-                        <lowLowActivationMessage></lowLowActivationMessage>
-                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
-                        <lowActivationMessage></lowActivationMessage>
-                        <lowDeactivationMessage></lowDeactivationMessage>
-                        <highActivationMessage></highActivationMessage>
-                        <highDeactivationMessage></highDeactivationMessage>
-                        <highHighActivationMessage></highHighActivationMessage>
-                        <highHighDeactivationMessage></highHighDeactivationMessage>
-                        <loggingEnabled>false</loggingEnabled>
-                     </alarmLimits>
-                     <enableWriteMode>true</enableWriteMode>
-                     <fontSize>30</fontSize>
-                     <gaugeColor>RED</gaugeColor>
-                  </parameters>
-               </gauge>
-               <gauge>
-                  <type>NUMERIC</type>
-                  <rowIndex>1</rowIndex>
-                  <colIndex>4</colIndex>
-                  <rowSpan>1</rowSpan>
-                  <colSpan>1</colSpan>
-                  <items>
-                     <item>
-                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/fbInitMotionToSetPoint/stSetDynamicParams/rJerk_m_s3</nodeIdValue>
-                        <dataType>Double</dataType>
-                        <signalName>rJerk_m_s3</signalName>
-                        <currentWrite>true</currentWrite>
-                        <loggingEnabled>false</loggingEnabled>
-                     </item>
-                  </items>
-                  <parameters>
-                     <title>m/s^3</title>
-                     <unit></unit>
-                     <scaling>1.0</scaling>
-                     <offset>0.0</offset>
-                     <decimalPlaces>2</decimalPlaces>
-                     <alarmLimits>
-                        <lowLowLimit>0.0</lowLowLimit>
-                        <lowLimit>0.0</lowLimit>
-                        <highLimit>0.0</highLimit>
-                        <highHighLimit>0.0</highHighLimit>
-                        <lowLowIsEnabled>false</lowLowIsEnabled>
-                        <lowIsEnabled>false</lowIsEnabled>
-                        <highIsEnabled>false</highIsEnabled>
-                        <highHighIsEnabled>false</highHighIsEnabled>
-                        <showNotifications>false</showNotifications>
-                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
-                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
-                        <showDialogsMode>MANUAL</showDialogsMode>
-                        <lowLowActivationMessage></lowLowActivationMessage>
-                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
-                        <lowActivationMessage></lowActivationMessage>
-                        <lowDeactivationMessage></lowDeactivationMessage>
-                        <highActivationMessage></highActivationMessage>
-                        <highDeactivationMessage></highDeactivationMessage>
-                        <highHighActivationMessage></highHighActivationMessage>
-                        <highHighDeactivationMessage></highHighDeactivationMessage>
-                        <loggingEnabled>false</loggingEnabled>
-                     </alarmLimits>
-                     <enableWriteMode>true</enableWriteMode>
-                     <fontSize>30</fontSize>
-                     <gaugeColor>PINK</gaugeColor>
                   </parameters>
                </gauge>
                <gauge>
@@ -1186,6 +1084,108 @@
                      <enableWriteMode>false</enableWriteMode>
                      <showLegend>false</showLegend>
                      <showValue>true</showValue>
+                  </parameters>
+               </gauge>
+               <gauge>
+                  <type>NUMERIC</type>
+                  <rowIndex>1</rowIndex>
+                  <colIndex>3</colIndex>
+                  <rowSpan>1</rowSpan>
+                  <colSpan>1</colSpan>
+                  <items>
+                     <item>
+                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/stSetMotionParam/rDeceleration_mm_s2</nodeIdValue>
+                        <dataType>Double</dataType>
+                        <signalName>rDeceleration_mm_s2</signalName>
+                        <currentWrite>true</currentWrite>
+                        <loggingEnabled>false</loggingEnabled>
+                     </item>
+                  </items>
+                  <parameters>
+                     <title>Deceleration</title>
+                     <unit>m/s^2</unit>
+                     <scaling>1.0</scaling>
+                     <offset>0.0</offset>
+                     <decimalPlaces>2</decimalPlaces>
+                     <alarmLimits>
+                        <lowLowLimit>0.0</lowLowLimit>
+                        <lowLimit>0.0</lowLimit>
+                        <highLimit>0.0</highLimit>
+                        <highHighLimit>0.0</highHighLimit>
+                        <lowLowIsEnabled>false</lowLowIsEnabled>
+                        <lowIsEnabled>false</lowIsEnabled>
+                        <highIsEnabled>false</highIsEnabled>
+                        <highHighIsEnabled>false</highHighIsEnabled>
+                        <showNotifications>false</showNotifications>
+                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
+                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
+                        <showDialogsMode>MANUAL</showDialogsMode>
+                        <lowLowActivationMessage></lowLowActivationMessage>
+                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
+                        <lowActivationMessage></lowActivationMessage>
+                        <lowDeactivationMessage></lowDeactivationMessage>
+                        <highActivationMessage></highActivationMessage>
+                        <highDeactivationMessage></highDeactivationMessage>
+                        <highHighActivationMessage></highHighActivationMessage>
+                        <highHighDeactivationMessage></highHighDeactivationMessage>
+                        <loggingEnabled>false</loggingEnabled>
+                     </alarmLimits>
+                     <enableWriteMode>true</enableWriteMode>
+                     <fontSize>30</fontSize>
+                     <gaugeColor>RED</gaugeColor>
+                  </parameters>
+               </gauge>
+               <gauge>
+                  <type>NUMERIC</type>
+                  <rowIndex>1</rowIndex>
+                  <colIndex>4</colIndex>
+                  <rowSpan>1</rowSpan>
+                  <colSpan>1</colSpan>
+                  <items>
+                     <item>
+                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/PLC_PRG/stSetMotionParam/rJerk_mm_s3</nodeIdValue>
+                        <dataType>Double</dataType>
+                        <signalName>rJerk_mm_s3</signalName>
+                        <currentWrite>true</currentWrite>
+                        <loggingEnabled>false</loggingEnabled>
+                     </item>
+                  </items>
+                  <parameters>
+                     <title>m/s^3</title>
+                     <unit></unit>
+                     <scaling>1.0</scaling>
+                     <offset>0.0</offset>
+                     <decimalPlaces>2</decimalPlaces>
+                     <alarmLimits>
+                        <lowLowLimit>0.0</lowLowLimit>
+                        <lowLimit>0.0</lowLimit>
+                        <highLimit>0.0</highLimit>
+                        <highHighLimit>0.0</highHighLimit>
+                        <lowLowIsEnabled>false</lowLowIsEnabled>
+                        <lowIsEnabled>false</lowIsEnabled>
+                        <highIsEnabled>false</highIsEnabled>
+                        <highHighIsEnabled>false</highHighIsEnabled>
+                        <showNotifications>false</showNotifications>
+                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
+                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
+                        <showDialogsMode>MANUAL</showDialogsMode>
+                        <lowLowActivationMessage></lowLowActivationMessage>
+                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
+                        <lowActivationMessage></lowActivationMessage>
+                        <lowDeactivationMessage></lowDeactivationMessage>
+                        <highActivationMessage></highActivationMessage>
+                        <highDeactivationMessage></highDeactivationMessage>
+                        <highHighActivationMessage></highHighActivationMessage>
+                        <highHighDeactivationMessage></highHighDeactivationMessage>
+                        <loggingEnabled>false</loggingEnabled>
+                     </alarmLimits>
+                     <enableWriteMode>true</enableWriteMode>
+                     <fontSize>30</fontSize>
+                     <gaugeColor>PINK</gaugeColor>
                   </parameters>
                </gauge>
             </gauges>
