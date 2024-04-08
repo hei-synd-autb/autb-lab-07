@@ -14,24 +14,20 @@ Author: [Cédric Lenoir](mailto:cedric.lenoir@hevs.ch)
 
 *Keywords:* **Polynomial Cyclic Set Point**
 
+# Prérequis
+Ce travail pratique suppose une compréhension élémentaire d'une machine d'état selon PackML.
+
+L'utilisation d'un polynôme pour piloter un ou plusieurs axes synchronisés est un exemple type de ce que l'on peut retrouver dans l'état Execute.
+
+
+# Préambule
+L'émergence de l'Ethernet Realtime a été développé principalement pour des applications dédiées au contrôle d'axe électrique.
+Avant la généralisation de l'Ethernet Realtime, et en particulier Ethercat dans l'industrie des machines, le pilotage d'axe électriques était une tâche complexe, au niveau logiciel, mais aussi au niveau du câblage et de la mise en service.
+
+La possibilité de synchroniser plusieurs axes en position avec une cadence de 2 [ms] ou moins directement à partir d'un PLC, ou pour être plus précis, directement depuis le même processeur que le PLC change considérablement la manière d'aborder le pilotage d'axes électriques, mais aussi de l'ensemble des processus automatiques jusqu'à une bande passante de l'ordre du [kHz].
+
 # Objectif
-## Objectif initial
-Dans un premier temps, l'idée de ce module était d'utiliser un **FB_CamIn**. Le **FB_CamIn** permet de synchroniser un axe réel sur un axe virtual en utilisant un profil de mouvement, **typiquement un polynôme d'ordre 5**.
-Ce genre de fonctionnement était nécessaire dans les PLC d'ancienne génération qui ne possédaient pas la puissance de calcul nécessaire pour *calculer à la volée*, les points d'un profil.
-
-Les profils étaient chargés à l'avance dans le système d'entrainement électrique et le PLC se contentaient de lancer des commandes de démarrage des profils.
-
-## Plan B
-Le **FB_CamIn** n'étant pas disponible, l'idée a été de se tourner vers un bloc spécifique de la librairie Bosch Rexroth, **MB_CyclicSetPoint**. Les Function Blocks de la librairie **PLCopen** de Bosch Rexroth avec l'entête **MB** sont des Function Blocks qui suivent le principe de fontionnement de PLCopen, *Execute, AXIS_REF, Active, Error...* mais implémentent une fonction particulière.
-
-## Plan C
-**MB_CyclicSetPoint** est documenté, mais pas implémenté dans la librairie CXA_PLCopen au moment de l'écriture de ce cours, 17 octobre 2023. On se tourne vers sa version **AxsCyclicSetPoint**, **SetCyclicSetPoint**. Le comportement est identique à MB_CyclicSetPoint, mais l'implémentation est légèrement différente.
-
-<figure>
-    <img src="./img/ML_AxsCyclicSetPoint.png"
-         alt="ML_AxsCyclicSetPoint">
-    <figcaption>ML_AxsCyclicSetPoint, source: Bosch Rexroth</figcaption>
-</figure>
+Dans ce travail pratique, nous allons mettre en pratique le pilotage d'un, puis plusieurs axes électriques qui seront pilotés directement à partir d'une tâche cyclique du PLC suivant un temps de cycle identique à celui du bus Ethercat.
 
 <figure>
     <img src="./img/ML_SetCyclicSetPoint.png"
@@ -75,6 +71,10 @@ values
 Ce TP reprend en partie le TP précédent PracticalWork-MoveAbsolute, mais l'encapsule Idle jusqu'à la fin du mouvement initial dans un seul Functional Block.
 
 > **Développer le comportement d'une partie de code dans un programme**, **PRG**, facilite en général le développement, même si la finalité reste de l'encapsuler dans un Bloque Fonctionnel.
+
+# Trace
+lrFollowingError := mcCyclicSetPoint.SetPoint - mcReadActualPosition.Position; 	
+Voir images pour Trace...
 
 # Le job
 
