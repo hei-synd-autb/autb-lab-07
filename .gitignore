@@ -11,3 +11,6 @@
 *.compileinfo
 *.project.~u
 .gitignore.bak
+/Pack/*.opt
+/Pack/*.json
+/Pack/*.project
