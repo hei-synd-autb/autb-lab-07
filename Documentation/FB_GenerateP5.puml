@@ -1,0 +1,22 @@
+
+[*] --> Idle
+Idle --> Init : Enable
+
+Init --> InOp : Init Done
+InOp --> Done : EndOfProfile
+
+state InOp {
+    StartPointOut -> Running : Start
+
+}
+
+Done --> Idle : Not Enable
+InOp --> Idle : Not Enable
+Error --> Idle : Not Enable
+Init --> Idle : Not Enable
+
+Init --> Error : Init Error
+InOp --> Error : Op Error
+
+Done --> InOp : Not Start
+@enduml
