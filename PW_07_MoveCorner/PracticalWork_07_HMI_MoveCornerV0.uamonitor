@@ -10,7 +10,7 @@
          <securityPolicy>Basic256Sha256</securityPolicy>
          <userAuthentication>UsernameAndPassword</userAuthentication>
          <username>boschrexroth</username>
-         <password>XcxeGLuEPrJPBIYGcgHhKdkRjFAz/hGd</password>
+         <password>QzT91skdm4EH/QYLjIsKKrUM/tAuTBYa</password>
       </connection>
    </connections>
    <groups>
@@ -135,24 +135,6 @@
             <item>
                <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
                <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/bEndPosition</nodeIdValue>
-               <dataType>Double</dataType>
-               <signalName>bEndPosition</signalName>
-               <currentWrite>true</currentWrite>
-               <loggingEnabled>false</loggingEnabled>
-            </item>
-            <item>
-               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/bInitPosition</nodeIdValue>
-               <dataType>Double</dataType>
-               <signalName>bInitPosition</signalName>
-               <currentWrite>true</currentWrite>
-               <loggingEnabled>false</loggingEnabled>
-            </item>
-            <item>
-               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
                <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/bStartForward</nodeIdValue>
                <dataType>Boolean</dataType>
                <signalName>bStartForward</signalName>
@@ -183,6 +165,24 @@
                <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/lrEndPosition</nodeIdValue>
                <dataType>Double</dataType>
                <signalName>lrEndPosition</signalName>
+               <currentWrite>true</currentWrite>
+               <loggingEnabled>false</loggingEnabled>
+            </item>
+            <item>
+               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/lrStartPosition</nodeIdValue>
+               <dataType>Double</dataType>
+               <signalName>lrStartPosition</signalName>
+               <currentWrite>true</currentWrite>
+               <loggingEnabled>false</loggingEnabled>
+            </item>
+            <item>
+               <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+               <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+               <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/udiCycleTimeMultiplier</nodeIdValue>
+               <dataType>UInt32</dataType>
+               <signalName>udiCycleTimeMultiplier</signalName>
                <currentWrite>true</currentWrite>
                <loggingEnabled>false</loggingEnabled>
             </item>
@@ -687,136 +687,6 @@
                   </parameters>
                </gauge>
                <gauge>
-                  <type>TREND_CHART</type>
-                  <rowIndex>4</rowIndex>
-                  <colIndex>0</colIndex>
-                  <rowSpan>2</rowSpan>
-                  <colSpan>4</colSpan>
-                  <items>
-                     <item>
-                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-                        <nodeIdValue>s=smartfunctionkit/communication/state/axis-1/position</nodeIdValue>
-                        <dataType>Double</dataType>
-                        <signalName>position</signalName>
-                        <currentWrite>false</currentWrite>
-                        <loggingEnabled>false</loggingEnabled>
-                     </item>
-                  </items>
-                  <parameters>
-                     <title>Is Position</title>
-                     <unit>mm</unit>
-                     <scaling>1.0</scaling>
-                     <offset>0.0</offset>
-                     <decimalPlaces>2</decimalPlaces>
-                     <alarmLimits>
-                        <lowLowLimit>0.0</lowLowLimit>
-                        <lowLimit>0.0</lowLimit>
-                        <highLimit>0.0</highLimit>
-                        <highHighLimit>0.0</highHighLimit>
-                        <lowLowIsEnabled>false</lowLowIsEnabled>
-                        <lowIsEnabled>false</lowIsEnabled>
-                        <highIsEnabled>false</highIsEnabled>
-                        <highHighIsEnabled>false</highHighIsEnabled>
-                        <showNotifications>false</showNotifications>
-                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
-                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
-                        <showDialogsMode>MANUAL</showDialogsMode>
-                        <lowLowActivationMessage></lowLowActivationMessage>
-                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
-                        <lowActivationMessage></lowActivationMessage>
-                        <lowDeactivationMessage></lowDeactivationMessage>
-                        <highActivationMessage></highActivationMessage>
-                        <highDeactivationMessage></highDeactivationMessage>
-                        <highHighActivationMessage></highHighActivationMessage>
-                        <highHighDeactivationMessage></highHighDeactivationMessage>
-                        <loggingEnabled>false</loggingEnabled>
-                     </alarmLimits>
-                     <rangeLimits>
-                        <lowLimit>-100</lowLimit>
-                        <highLimit>100</highLimit>
-                     </rangeLimits>
-                     <chartGaugeSettings>
-                        <timeRange>10</timeRange>
-                        <timeRangeUnit>SECONDS</timeRangeUnit>
-                        <lineStyle>NORMAL</lineStyle>
-                        <lineColor>MEDIUM_TURQUOISE</lineColor>
-                        <BackgroundColor>LIGHT_GREY</BackgroundColor>
-                        <showLabels>true</showLabels>
-                        <showLimits>false</showLimits>
-                        <enableLinearInterpolation>true</enableLinearInterpolation>
-                     </chartGaugeSettings>
-                     <enableWriteMode>false</enableWriteMode>
-                     <showLegend>false</showLegend>
-                     <showValue>true</showValue>
-                  </parameters>
-               </gauge>
-               <gauge>
-                  <type>TREND_CHART</type>
-                  <rowIndex>4</rowIndex>
-                  <colIndex>4</colIndex>
-                  <rowSpan>2</rowSpan>
-                  <colSpan>4</colSpan>
-                  <items>
-                     <item>
-                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
-                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-                        <nodeIdValue>s=smartfunctionkit/communication/state/axis-1/velocity</nodeIdValue>
-                        <dataType>Double</dataType>
-                        <signalName>velocity</signalName>
-                        <currentWrite>false</currentWrite>
-                        <loggingEnabled>false</loggingEnabled>
-                     </item>
-                  </items>
-                  <parameters>
-                     <title>Is Velocity</title>
-                     <unit></unit>
-                     <scaling>1.0</scaling>
-                     <offset>0.0</offset>
-                     <decimalPlaces>2</decimalPlaces>
-                     <alarmLimits>
-                        <lowLowLimit>0.0</lowLowLimit>
-                        <lowLimit>0.0</lowLimit>
-                        <highLimit>0.0</highLimit>
-                        <highHighLimit>0.0</highHighLimit>
-                        <lowLowIsEnabled>false</lowLowIsEnabled>
-                        <lowIsEnabled>false</lowIsEnabled>
-                        <highIsEnabled>false</highIsEnabled>
-                        <highHighIsEnabled>false</highHighIsEnabled>
-                        <showNotifications>false</showNotifications>
-                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
-                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
-                        <showDialogsMode>MANUAL</showDialogsMode>
-                        <lowLowActivationMessage></lowLowActivationMessage>
-                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
-                        <lowActivationMessage></lowActivationMessage>
-                        <lowDeactivationMessage></lowDeactivationMessage>
-                        <highActivationMessage></highActivationMessage>
-                        <highDeactivationMessage></highDeactivationMessage>
-                        <highHighActivationMessage></highHighActivationMessage>
-                        <highHighDeactivationMessage></highHighDeactivationMessage>
-                        <loggingEnabled>false</loggingEnabled>
-                     </alarmLimits>
-                     <rangeLimits>
-                        <lowLimit>-200</lowLimit>
-                        <highLimit>200</highLimit>
-                     </rangeLimits>
-                     <chartGaugeSettings>
-                        <timeRange>10</timeRange>
-                        <timeRangeUnit>SECONDS</timeRangeUnit>
-                        <lineStyle>NORMAL</lineStyle>
-                        <lineColor>BLACK</lineColor>
-                        <BackgroundColor>LIGHT_GREY</BackgroundColor>
-                        <showLabels>true</showLabels>
-                        <showLimits>false</showLimits>
-                        <enableLinearInterpolation>false</enableLinearInterpolation>
-                     </chartGaugeSettings>
-                     <enableWriteMode>false</enableWriteMode>
-                     <showLegend>false</showLegend>
-                     <showValue>true</showValue>
-                  </parameters>
-               </gauge>
-               <gauge>
                   <type>BOOLEAN</type>
                   <rowIndex>3</rowIndex>
                   <colIndex>7</colIndex>
@@ -1165,9 +1035,9 @@
                      <item>
                         <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
                         <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
-                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/lrInitPosition</nodeIdValue>
+                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/lrStartPosition</nodeIdValue>
                         <dataType>Double</dataType>
-                        <signalName>lrInitPosition</signalName>
+                        <signalName>lrStartPosition</signalName>
                         <currentWrite>true</currentWrite>
                         <loggingEnabled>false</loggingEnabled>
                      </item>
@@ -1203,6 +1073,122 @@
                      </alarmLimits>
                      <enableWriteMode>true</enableWriteMode>
                      <fontSize>30</fontSize>
+                     <gaugeColor>BLACK</gaugeColor>
+                  </parameters>
+               </gauge>
+               <gauge>
+                  <type>TREND_CHART</type>
+                  <rowIndex>4</rowIndex>
+                  <colIndex>2</colIndex>
+                  <rowSpan>2</rowSpan>
+                  <colSpan>5</colSpan>
+                  <items>
+                     <item>
+                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+                        <nodeIdValue>s=smartfunctionkit/communication/state/axis-1/position</nodeIdValue>
+                        <dataType>Double</dataType>
+                        <signalName>position</signalName>
+                        <currentWrite>false</currentWrite>
+                        <loggingEnabled>false</loggingEnabled>
+                     </item>
+                  </items>
+                  <parameters>
+                     <title>position</title>
+                     <unit></unit>
+                     <scaling>1.0</scaling>
+                     <offset>0.0</offset>
+                     <decimalPlaces>2</decimalPlaces>
+                     <alarmLimits>
+                        <lowLowLimit>0.0</lowLowLimit>
+                        <lowLimit>0.0</lowLimit>
+                        <highLimit>0.0</highLimit>
+                        <highHighLimit>0.0</highHighLimit>
+                        <lowLowIsEnabled>false</lowLowIsEnabled>
+                        <lowIsEnabled>false</lowIsEnabled>
+                        <highIsEnabled>false</highIsEnabled>
+                        <highHighIsEnabled>false</highHighIsEnabled>
+                        <showNotifications>false</showNotifications>
+                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
+                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
+                        <showDialogsMode>MANUAL</showDialogsMode>
+                        <lowLowActivationMessage></lowLowActivationMessage>
+                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
+                        <lowActivationMessage></lowActivationMessage>
+                        <lowDeactivationMessage></lowDeactivationMessage>
+                        <highActivationMessage></highActivationMessage>
+                        <highDeactivationMessage></highDeactivationMessage>
+                        <highHighActivationMessage></highHighActivationMessage>
+                        <highHighDeactivationMessage></highHighDeactivationMessage>
+                        <loggingEnabled>false</loggingEnabled>
+                     </alarmLimits>
+                     <rangeLimits>
+                        <lowLimit>-100</lowLimit>
+                        <highLimit>100</highLimit>
+                     </rangeLimits>
+                     <chartGaugeSettings>
+                        <timeRange>60</timeRange>
+                        <timeRangeUnit>SECONDS</timeRangeUnit>
+                        <lineStyle>NORMAL</lineStyle>
+                        <lineColor>BLACK</lineColor>
+                        <BackgroundColor>LIGHT_GREY</BackgroundColor>
+                        <showLabels>true</showLabels>
+                        <showLimits>false</showLimits>
+                        <enableLinearInterpolation>false</enableLinearInterpolation>
+                     </chartGaugeSettings>
+                     <enableWriteMode>false</enableWriteMode>
+                     <showLegend>false</showLegend>
+                     <showValue>true</showValue>
+                  </parameters>
+               </gauge>
+               <gauge>
+                  <type>NUMERIC</type>
+                  <rowIndex>4</rowIndex>
+                  <colIndex>1</colIndex>
+                  <rowSpan>1</rowSpan>
+                  <colSpan>1</colSpan>
+                  <items>
+                     <item>
+                        <serverUri>urn:Control@Rexroth:ctrlX:AUTOMATION:Server</serverUri>
+                        <namespaceUri>http://www.boschrexroth.com/OpcUa/Datalayer</namespaceUri>
+                        <nodeIdValue>s=plc/app/BaseInterfaceUa/sym/GVL_CyclSetPoint/stRemote/in/udiCycleTimeMultiplier</nodeIdValue>
+                        <dataType>UInt32</dataType>
+                        <signalName>udiCycleTimeMultiplier</signalName>
+                        <currentWrite>true</currentWrite>
+                        <loggingEnabled>false</loggingEnabled>
+                     </item>
+                  </items>
+                  <parameters>
+                     <title>udiCycleTimeMultiplier</title>
+                     <unit></unit>
+                     <scaling>1.0</scaling>
+                     <offset>0.0</offset>
+                     <decimalPlaces>0</decimalPlaces>
+                     <alarmLimits>
+                        <lowLowLimit>0.0</lowLowLimit>
+                        <lowLimit>0.0</lowLimit>
+                        <highLimit>0.0</highLimit>
+                        <highHighLimit>0.0</highHighLimit>
+                        <lowLowIsEnabled>false</lowLowIsEnabled>
+                        <lowIsEnabled>false</lowIsEnabled>
+                        <highIsEnabled>false</highIsEnabled>
+                        <highHighIsEnabled>false</highHighIsEnabled>
+                        <showNotifications>false</showNotifications>
+                        <showDialogsFor>ALARMS_AND_WARNINGS</showDialogsFor>
+                        <showDialogsOn>ACTIVATION_AND_DEACTIVATION</showDialogsOn>
+                        <showDialogsMode>MANUAL</showDialogsMode>
+                        <lowLowActivationMessage></lowLowActivationMessage>
+                        <lowLowDeactivationMessage></lowLowDeactivationMessage>
+                        <lowActivationMessage></lowActivationMessage>
+                        <lowDeactivationMessage></lowDeactivationMessage>
+                        <highActivationMessage></highActivationMessage>
+                        <highDeactivationMessage></highDeactivationMessage>
+                        <highHighActivationMessage></highHighActivationMessage>
+                        <highHighDeactivationMessage></highHighDeactivationMessage>
+                        <loggingEnabled>false</loggingEnabled>
+                     </alarmLimits>
+                     <enableWriteMode>true</enableWriteMode>
+                     <fontSize>40</fontSize>
                      <gaugeColor>BLACK</gaugeColor>
                   </parameters>
                </gauge>
